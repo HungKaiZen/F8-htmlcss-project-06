@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project-06</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body style="margin-bottom: 500px">
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <div class="container">
+            <!-- Clients -->
+            <section class="clients">
+                <div class="row gy-3">
+                    <div class="col-4 col-xxl-12">
+                        <div class="clients__text">
+                            <h2 class="section__heading clients__heading">
+                                Meet my recent clients
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-8 col-xxl-12">
+                        <div class="clients__list">
+                            <img src="./assets/icon/google.svg" alt="" />
+                            <img src="./assets/icon/warner-bros.svg" alt="" />
+                            <img src="./assets/icon/mailchimp.svg" alt="" />
+                            <img src="./assets/icon/adobe.svg" alt="" />
+                        </div>
+                        <div class="clients__list">
+                            <img src="./assets/icon/upwork.svg" alt="" />
+                            <img
+                                src="./assets/icon/creative-cloud.svg"
+                                alt=""
+                            />
+                            <img src="./assets/icon/woocommerce.svg" alt="" />
+                            <img src="./assets/icon/canva.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <!-- <section class="services">
+                <h2 class="section__heading services__heading">Specialities</h2>
+                <p class="section__desc services__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
+                <div class="services__list">
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <article class="services__item">
+                                <img
+                                    src="./assets/img/services/bulb.png"
+                                    alt=""
+                                    class="services__item-icon"
+                                />
+                                <h3 class="services__item-title">
+                                    Product design
+                                </h3>
+                                <p class="services__item-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="services__item">
+                                <img
+                                    src="./assets/img/services/pencil.png"
+                                    alt=""
+                                    class="services__item-icon"
+                                />
+                                <h3 class="services__item-title">
+                                    UI/UX Design
+                                </h3>
+                                <p class="services__item-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="services__item">
+                                <img
+                                    src="./assets/img/services/mobile.png"
+                                    alt=""
+                                    class="services__item-icon"
+                                />
+                                <h3 class="services__item-title">
+                                    Interactive design
+                                </h3>
+                                <p class="services__item-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+        <!-- Works -->
+        <!-- <section class="works">
+            <div class="container">
+                <div class="works__top">
+                    <h2 class="section__heading works__heading">
+                        Take a look at my recent projects
+                    </h2>
+                    <p class="section__desc works__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                </div>
+                <div class="works__list">
+                    <div class="row row-cols-2 gy-3">
+                        <div class="col">
+                            <article class="works__item">
+                                <div class="works__item-info">
+                                    <h3 class="works__item-title">
+                                        Wally Website
+                                    </h3>
+                                    <p class="works__item-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="works__item-link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <img
+                                    src="./assets/img/works/works-1.png"
+                                    alt=""
+                                    class="works__item-thumb"
+                                />
+                            </article>
+                        </div>
+
+                        <div class="col">
+                            <article class="works__item">
+                                <div class="works__item-info">
+                                    <h3 class="works__item-title">
+                                        Banking App
+                                    </h3>
+                                    <p class="works__item-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="works__item-link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <img
+                                    src="./assets/img/works/works-3.png"
+                                    alt=""
+                                    class="works__item-thumb"
+                                />
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="works__item">
+                                <div class="works__item-info">
+                                    <h3 class="works__item-title">Web App</h3>
+                                    <p class="works__item-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="works__item-link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <img
+                                    src="./assets/img/works/works-2.png"
+                                    alt=""
+                                    class="works__item-thumb"
+                                />
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="works__item">
+                                <div class="works__item-info">
+                                    <h3 class="works__item-title">
+                                        Oculus Website
+                                    </h3>
+                                    <p class="works__item-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="works__item-link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <img
+                                    src="./assets/img/works/works-4.png"
+                                    alt=""
+                                    class="works__item-thumb"
+                                />
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="works__bottom">
+                    <a href="#!" class="btn btn--secondary">All Projects</a>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- About-->
+        <!-- <div class="container">
+            <section class="about">
+                <h3 class="about__sub-heading">
+                    Hey,,,,It’s Arif
+                    <img src="./assets/icon/hand.svg" alt="" />
+                </h3>
+                <h2 class="section__heading about__heading">
+                    Interactive Designer
+                </h2>
+                <p class="section__desc about__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
+                <div class="separate"></div>
+                <div class="about__list">
+                    <div class="about__item">
+                        <h4 class="about__item-title">08+</h4>
+                        <p class="about__item-desc">Years Experience</p>
+                    </div>
+                    <div class="about__item">
+                        <h4 class="about__item-title">21+</h4>
+                        <p class="about__item-desc">Features & Awards</p>
+                    </div>
+                    <div class="about__item">
+                        <h4 class="about__item-title">97%</h4>
+                        <p class="about__item-desc">Clients Rating</p>
+                    </div>
+                </div>
+                <div class="separate"></div>
+                <div class="intro-video">
+                    <video controls class="video">
+                        <source src="./assets/img/video/movie.mp4" />
+                    </video>
+                    <img
+                        src="./assets/img/about/intro-video.png"
+                        alt=""
+                        class="intro-video__img"
+                    />
+                    <img
+                        src="./assets/icon/play.svg"
+                        alt=""
+                        class="intro-video__play-icon"
+                    />
+                    <button class="btn btn--secondary intro-video__btn">
+                        INTRO VIDEO
+                    </button>
+                </div>
+            </section>
+        </div> -->
+
+        <!-- Testimonial -->
+        <!-- <section class="testimonial">
+            <div class="container">
+                <div class="testimonial__content">
+                    <h2 class="section__heading testimonial__heading">
+                        What people says
+                    </h2>
+                    <p class="section__desc testimonial__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                    <div class="user__list">
+                        <div class="user__item">
+                            <blockquote class="user__item-comment">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="user__item-info">
+                                <img
+                                    src="./assets/img/testimonial/avatar-1.png"
+                                    alt=""
+                                    class="user__item-avatar"
+                                />
+                                <p class="user__item-name">Joe Elia</p>
+                            </div>
+                            <p class="user__item-desc">
+                                User Interface Design at PCL Lab
+                            </p>
+                        </div>
+                        <div class="user__item">
+                            <blockquote class="user__item-comment">
+                                “Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Corporis officiis possimus
+                                modi earum? Totam iure error, ab cumque minima
+                                rem.”
+                            </blockquote>
+                            <div class="user__item-info">
+                                <img
+                                    src="./assets/img/testimonial/avatar-1.png"
+                                    alt=""
+                                    class="user__item-avatar"
+                                />
+                                <p class="user__item-name">Joe Elia</p>
+                            </div>
+                            <p class="user__item-desc">
+                                User Interface Design at PCL Lab
+                            </p>
+                        </div>
+                        <div class="user__item">
+                            <blockquote class="user__item-comment">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="user__item-info">
+                                <img
+                                    src="./assets/img/testimonial/avatar-1.png"
+                                    alt=""
+                                    class="user__item-avatar"
+                                />
+                                <p class="user__item-name">Joe Elia</p>
+                            </div>
+                            <p class="user__item-desc">
+                                User Interface Design at PCL Lab
+                            </p>
+                        </div>
+                        <div class="user__item">
+                            <blockquote class="user__item-comment">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="user__item-info">
+                                <img
+                                    src="./assets/img/testimonial/avatar-1.png"
+                                    alt=""
+                                    class="user__item-avatar"
+                                />
+                                <p class="user__item-name">Joe Elia</p>
+                            </div>
+                            <p class="user__item-desc">
+                                User Interface Design at PCL Lab
+                            </p>
+                        </div>
+                        <div class="user__item">
+                            <blockquote class="user__item-comment">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="user__item-info">
+                                <img
+                                    src="./assets/img/testimonial/avatar-1.png"
+                                    alt=""
+                                    class="user__item-avatar"
+                                />
+                                <p class="user__item-name">Joe Elia</p>
+                            </div>
+                            <p class="user__item-desc">
+                                User Interface Design at PCL Lab
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__controls">
+                        <div class="controls">
+                            <span class="controls__dot"></span>
+                            <span class="controls__dot"></span>
+                            <span class="controls__dot active"></span>
+                            <span class="controls__dot"></span>
+                            <span class="controls__dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Faq -->
+        <div class="container">
+            <!-- <section class="faq">
+                <h2 class="section__heading faq__heading">
+                    A few questions clients normally ask me
+                </h2>
+
+                <div class="faq__list">
+                    <article class="faq__item active">
+                        <div class="faq__item-content">
+                            <h3 class="faq__item-title">
+                                What is your hourly rate?
+                            </h3>
+                            <p class="faq__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq__item-btn">
+                            <img src="./assets/icon/plus.svg" alt="" />
+                        </button>
+                    </article>
+                    <article class="faq__item">
+                        <div class="faq__item-content">
+                            <h3 class="faq__item-title">
+                                What type of projects do you take on?
+                            </h3>
+                            <p class="faq__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq__item-btn">
+                            <img src="./assets/icon/plus.svg" alt="" />
+                        </button>
+                    </article>
+                    <article class="faq__item">
+                        <div class="faq__item-content">
+                            <h3 class="faq__item-title">
+                                How do you charge for projects ?
+                            </h3>
+                            <p class="faq__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq__item-btn">
+                            <img src="./assets/icon/plus.svg" alt="" />
+                        </button>
+                    </article>
+                    <article class="faq__item">
+                        <div class="faq__item-content">
+                            <h3 class="faq__item-title">
+                                What time-zone do you work in?
+                            </h3>
+                            <p class="faq__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq__item-btn">
+                            <img src="./assets/icon/plus.svg" alt="" />
+                        </button>
+                    </article>
+                    <article class="faq__item">
+                        <div class="faq__item-content">
+                            <h3 class="faq__item-title">
+                                How often can we communicate?
+                            </h3>
+                            <p class="faq__item-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                        <button class="faq__item-btn">
+                            <img src="./assets/icon/plus.svg" alt="" />
+                        </button>
+                    </article>
+                </div>
+            </section> -->
+
+            <!-- Galery -->
+            <!-- <section class="gallery">
+                <h2 class="section__heading gallery__heading">My atmosphere</h2>
+                <p class="section__desc gallery__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
+                <h3 class="gallery__sub-heading">
+                    <a href="#!" class="gallery__link">@interaction_arif</a>
+                </h3>
+                <div class="gallery__list">
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <div class="gallery__item">
+                                <img
+                                    src="./assets/img/gallery/gallery-1.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gallery__item">
+                                <img
+                                    src="./assets/img/gallery/gallery-2.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="gallery__item">
+                                <img
+                                    src="./assets/img/gallery/gallery-3.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Cta -->
+            <!-- <section class="cta">
+                <img
+                    src="./assets/icon/face-icon.svg"
+                    alt=""
+                    class="cta__img"
+                />
+                <h2 class="section__heading cta__heading">
+                    Got a project? Let’s talk
+                </h2>
+                <p class="section__desc cta__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
+                <a href="#!" class="btn btn--primary cta__btn">Book a Call</a>
+            </section> -->
+        </div>
+
+        <!-- <div id="footer" class="footer"></div>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script> -->
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

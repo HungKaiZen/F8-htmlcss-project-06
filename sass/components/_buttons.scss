@@ -1,0 +1,33 @@
+@use "../abstract";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 62px;
+    padding: 16px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+
+    @include abstract.screen(lg) {
+        width: 120px;
+        height: 48px;
+        font-size: 1.6rem;
+    }
+
+    &--text {
+        color: var(--text-dark-color);
+        text-decoration: underline;
+    }
+
+    &--primary {
+        color: var(--text-white-color);
+        background: #5d3bee;
+    }
+
+    &--secondary {
+        color: var(--text-dark-color);
+        background: #fff;
+    }
+}

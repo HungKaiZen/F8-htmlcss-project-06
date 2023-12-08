@@ -1,0 +1,88 @@
+@use "../abstract";
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #5d3bee;
+    --text-gray-color: #51586a;
+    --text-white-color: #fff;
+    --text-dark-color: #080415;
+    --bg-color: #fbfaff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+button,
+select,
+textarea,
+input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    color: var(--text-dark-color);
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -3.2px;
+
+    @include abstract.screen(xl) {
+        font-size: 6.6rem;
+    }
+
+    @include abstract.screen(lg) {
+        font-size: 4.4rem;
+    }
+
+    @include abstract.screen(md) {
+        letter-spacing: -1px;
+    }
+}
+
+.section__heading {
+    color: var(--text-dark-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -2.24px;
+}
+
+.section__desc {
+    color: var(--text-gray-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+
+    @include abstract.screen(md) {
+        // font-size: 1.6rem;
+    }
+}
+
+.separate {
+    width: 946px;
+    height: 1.5px;
+    margin: 0 auto;
+    background: #cecdd0;
+}
